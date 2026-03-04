@@ -1,0 +1,172 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:'Poppins',sans-serif;
+scroll-behavior:smooth;
+}
+
+
+/* NAVBAR */
+
+#navbar{
+position:fixed;
+top:0;
+width:100%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 60px;
+background:transparent;
+transition:0.4s;
+z-index:1000;
+}
+
+#navbar.scrolled{
+background:#111;
+box-shadow:0 4px 10px rgba(0,0,0,0.3);
+}
+
+.logo{
+color:white;
+font-size:24px;
+font-weight:600;
+}
+
+.nav-links{
+list-style:none;
+display:flex;
+}
+
+.nav-links li{
+margin-left:30px;
+}
+
+.nav-links a{
+text-decoration:none;
+color:white;
+font-size:16px;
+transition:0.3s;
+position:relative;
+}
+
+.nav-links a:hover{
+color:#00d9ff;
+}
+
+
+/* HERO SECTION */
+
+.hero{
+height:100vh;
+background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),
+url("https://images.unsplash.com/photo-1498050108023-c5249f4df085");
+background-size:cover;
+background-position:center;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+color:white;
+padding:20px;
+}
+
+.hero h1{
+font-size:55px;
+margin-bottom:20px;
+}
+
+.hero p{
+font-size:20px;
+margin-bottom:30px;
+}
+
+.btn{
+padding:12px 30px;
+border:none;
+background:#00d9ff;
+color:black;
+font-size:16px;
+border-radius:5px;
+cursor:pointer;
+transition:0.3s;
+}
+
+.btn:hover{
+background:white;
+}
+
+
+/* SECTIONS */
+
+.section{
+padding:120px 10%;
+text-align:center;
+}
+
+.section h2{
+font-size:35px;
+margin-bottom:20px;
+}
+
+
+/* SERVICES */
+
+.services{
+background:#f4f4f4;
+}
+
+.service-container{
+display:flex;
+justify-content:center;
+gap:30px;
+flex-wrap:wrap;
+margin-top:40px;
+}
+
+.card{
+background:white;
+padding:30px;
+width:260px;
+border-radius:10px;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+box-shadow:0 10px 20px rgba(0,0,0,0.2);
+}
+
+
+/* FOOTER */
+
+footer{
+background:#111;
+color:white;
+text-align:center;
+padding:20px;
+}
+
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+#navbar{
+padding:15px 20px;
+}
+
+.nav-links{
+display:none;
+}
+
+.hero h1{
+font-size:38px;
+}
+
+}
